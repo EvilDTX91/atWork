@@ -1,0 +1,172 @@
+body {
+    background-color: aquamarine;
+    color: red;
+}
+
+#menuLine {
+    background-color: aquamarine;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+#calculatorShow {
+    background-color: aqua;
+    font-size: 20px;
+    width: 110px;
+    height: 25px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#blackJackShow {
+    background-color: aqua;
+    font-size: 20px;
+    width: 110px;
+    height: 25px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#bjwindows {
+    background-color: darkred;
+    border: solid black;
+    width: 50%;
+    height: 50%;
+    display: none;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+#dealerwindow {
+    background-color: darkgreen;
+    font-size: 20px;
+    width: 90%;
+    height: 40%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    border-radius: 12px;
+}
+
+#dealerCards {
+    background-color: lightgreen;
+    width: 67%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#dealerData {
+    background-color: white;
+    width: 27%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#playerwindow {
+    background-color: darkgreen;
+    font-size: 20px;
+    width: 90%;
+    height: 40%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+}
+
+#playerCards {
+    background-color: lightgreen;
+    width: 67%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#playerData {
+    background-color: white;
+    width: 27%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#calculator {
+    background-color: darkgreen;
+    border: solid black;
+    width: 250px;
+    height: 280px;
+    border-radius: 6px;
+    padding: 5px;
+    display: none;
+}
+
+#calculatorWindow {
+    font-size: 30px;
+    width: 250px;
+    height: 50px;
+    background-color: lightblue;
+    color: darkred;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#calculatorNumberX {
+    font-size: 25px;
+    width: 290px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#calculatorNumberY {
+    font-size: 25px;
+    width: 290px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#calculatorOperator {
+    font-size: 25px;
+    width: 290px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#calculatorButtons {
+    font-size: 20px;
+    width: 50px;
+    height: 25px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    cursor: pointer;
+}

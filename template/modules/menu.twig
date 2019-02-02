@@ -1,0 +1,36 @@
+<div id="menuLine">
+    <button id="calculatorShow" onmouseenter="changeColor('calculatorShow')" onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')">Calculator</button>
+    <button id="blackJackShow" onmouseenter="changeColor('blackJackShow')" onmouseleave="changeColor('nope')" onclick="showOrHide('blackjack')">BlackJack</button>
+</div>
+<script>
+    function
+    changeColor(colorChangedButton) {
+        if(colorChangedButton == 'calculatorShow') {
+            document.getElementById('calculatorShow').style.backgroundColor = 'yellow';
+            document.getElementById('blackJackShow').style.backgroundColor = 'aqua';
+        }
+        else if(colorChangedButton == 'blackJackShow') {
+            document.getElementById('blackJackShow').style.backgroundColor = 'yellow';
+            document.getElementById('calculatorShow').style.backgroundColor = 'aqua';
+        }
+        else {
+            document.getElementById('calculatorShow').style.backgroundColor = 'aqua';
+            document.getElementById('blackJackShow').style.backgroundColor = 'aqua';
+        }
+    }
+
+    function
+    showOrHide(showthis) {
+        if (showthis == 'calculator') {
+            document.getElementById('bjwindows').style.display = 'none';
+            document.getElementById('calculator').style.display = 'block';
+        } else if (showthis == 'blackjack') {
+            document.getElementById('bjwindows').style.display = 'block';
+            document.getElementById('calculator').style.display = 'none';
+        }
+        else {
+            document.getElementById('calculator').style.display = 'none';
+            document.getElementById('bjwindows').style.display = 'none';
+        }
+    }
+</script>

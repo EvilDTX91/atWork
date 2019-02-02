@@ -1,0 +1,128 @@
+<div id="calculator">
+    <input type="text" id="calculatorWindow" disabled>
+    <div>
+        <button id="calculatorButtons" value="<" onclick="displayCalculator('<')"><</button>
+        <button id="calculatorButtons" value="C" onclick="displayCalculator('C')">C</button>
+        <button id="calculatorButtons" value="x" onclick="displayCalculator('x')">x</button>
+        <button id="calculatorButtons" value="%" onclick="displayCalculator('%')">%</button>
+    </div>
+    <div>
+        <button id="calculatorButtons" value="7" onclick="displayCalculator(7)">7</button>
+        <button id="calculatorButtons" value="8" onclick="displayCalculator(8)">8</button>
+        <button id="calculatorButtons" value="9" onclick="displayCalculator(9)">9</button>
+        <button id="calculatorButtons" value="/" onclick="displayCalculator('/')">/</button>
+    </div>
+    <div>
+        <button id="calculatorButtons" value="4" onclick="displayCalculator(4)">4</button>
+        <button id="calculatorButtons" value="5" onclick="displayCalculator(5)">5</button>
+        <button id="calculatorButtons" value="6" onclick="displayCalculator(6)">6</button>
+        <button id="calculatorButtons" value="*" onclick="displayCalculator('*')">*</button>
+    </div>
+    <div>
+        <button id="calculatorButtons" value="1" onclick="displayCalculator(1)">1</button>
+        <button id="calculatorButtons" value="2" onclick="displayCalculator(2)">2</button>
+        <button id="calculatorButtons" value="3" onclick="displayCalculator(3)">3</button>
+        <button id="calculatorButtons" value="-" onclick="displayCalculator('-')">-</button>
+    </div>
+    <div>
+        <button id="calculatorButtons" value="0" onclick="displayCalculator(0)">0</button>
+        <button id="calculatorButtons" value="." onclick="displayCalculator('.')">.</button>
+        <button id="calculatorButtons" value="=" onclick="displayCalculator('=')">=</button>
+        <button id="calculatorButtons" value="+" onclick="displayCalculator('+')">+</button>
+    </div>
+    <div>
+        <input type="text" id="calculatorNumberX" style="display:none" disabled>
+        <input type="text" id="calculatorOperator" style="display:none" disabled>
+        <input type="text" id="calculatorNumberY" style="display:none" disabled>
+    </div>
+</div>
+<script>
+    function
+    displayCalculator(newElement) {
+        var inputNumber = document.getElementById('calculatorWindow').value;
+        //var operators = ['+', '-', '*', '/', '%', 'C', '<', '='];
+        //var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        switch (newElement) {
+            case '+':
+                document.getElementById('calculatorOperator').value = newElement;
+                document.getElementById('calculatorNumberY').value = inputNumber;
+                document.getElementById('calculatorNumberX').value = '';
+                document.getElementById('calculatorWindow').value = '';
+                break;
+
+            case '-':
+                document.getElementById('calculatorOperator').value = newElement;
+                document.getElementById('calculatorNumberY').value = inputNumber;
+                document.getElementById('calculatorNumberX').value = '';
+                document.getElementById('calculatorWindow').value = '';
+                break;
+
+            case '*':
+                document.getElementById('calculatorOperator').value = newElement;
+                document.getElementById('calculatorNumberY').value = inputNumber;
+                document.getElementById('calculatorNumberX').value = '';
+                document.getElementById('calculatorWindow').value = '';
+                break;
+
+            case '/':
+                document.getElementById('calculatorOperator').value = newElement;
+                document.getElementById('calculatorNumberY').value = inputNumber;
+                document.getElementById('calculatorNumberX').value = '';
+                document.getElementById('calculatorWindow').value = '';
+                break;
+
+            case '%':
+                document.getElementById('calculatorOperator').value = newElement;
+                document.getElementById('calculatorNumberY').value = inputNumber;
+                document.getElementById('calculatorNumberX').value = '';
+                document.getElementById('calculatorWindow').value = '';
+                break;
+
+            case '=':
+                var number = document.getElementById('calculatorNumberY').value;
+                var operator = document.getElementById('calculatorOperator').value;
+                var result = 0;
+                if (operator === '+') {
+                    result = Number(number) + Number(inputNumber);
+                } else if (operator === '-') {
+                    result = Number(number) - Number(inputNumber);
+                } else if (operator === '*') {
+                    result = Number(number) * Number(inputNumber);
+                } else if (operator === '/') {
+                    result = Number(number) / Number(inputNumber);
+                } else if (operator === '%') {
+                    result = Number(number) % Number(inputNumber);
+                } else {
+                    break;
+                }
+                document.getElementById('calculatorOperator').value = '';
+                document.getElementById('calculatorNumberY').value = '';
+                document.getElementById('calculatorNumberX').value = '';
+                document.getElementById('calculatorWindow').value = '';
+                document.getElementById('calculatorWindow').value = result;
+                break;
+
+            case '<':
+                var str = document.getElementById('calculatorWindow').value;
+                var res = str.slice(0, str.length - 1);
+                document.getElementById('calculatorWindow').value = res;
+                break;
+
+            case 'C':
+                document.getElementById('calculatorOperator').value = '';
+                document.getElementById('calculatorNumberY').value = '';
+                document.getElementById('calculatorNumberX').value = '';
+                document.getElementById('calculatorWindow').value = '';
+                break;
+
+            case 'x':
+                document.getElementById('calculatorWindow').value = '';
+                break;
+
+            default:
+                document.getElementById('calculatorNumberX').value = inputNumber + newElement;
+                document.getElementById('calculatorWindow').value = inputNumber + newElement;
+        }
+    }
+</script>

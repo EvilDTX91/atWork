@@ -1,0 +1,14 @@
+{% block head %}
+    {% include 'partial/head.twig' %}
+    {% include 'partial/header.twig' %}
+{% endblock %}
+
+{% block content %}
+    {% block menu %}{% endblock %}
+    {% block text %}{% endblock %}
+    {% block commercials %}{% endblock %}
+{% endblock %}
+
+{%  block footer %}
+    {% include 'partial/footer.twig' %}
+{% endblock %}
