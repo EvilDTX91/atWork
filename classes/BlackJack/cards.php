@@ -1,6 +1,6 @@
 <?php
 
-namespace atwork\classes;
+namespace atwork\classes\BlackJack;
 class Cards
 {
     private static $CARDS = array('H1', 'H2', 'h3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H10', 'HJ', 'HQu', 'HK', 'HA',

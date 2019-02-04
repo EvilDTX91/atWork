@@ -1,6 +1,6 @@
 <?php
 
-namespace atwork\classes;
+namespace atwork\classes\BlackJack;
 class CardValue
 {
     public function getCardValue($cardname)
