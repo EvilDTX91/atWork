@@ -6,9 +6,9 @@ class PlayerData
 {
     private $USERNAME;
     private $EMAIL;
-    private $MONEY;
+    private $USERMONEY;
 
-    public function getUSERNAME() : string
+    public function getUSERNAME(): string
     {
         return $this->USERNAME;
     }
@@ -18,7 +18,7 @@ class PlayerData
         $this->USERNAME = $USERNAME;
     }
 
-    public function getEMAIL() : string
+    public function getEMAIL(): string
     {
         return $this->EMAIL;
     }
@@ -28,14 +28,14 @@ class PlayerData
         $this->EMAIL = $EMAIL;
     }
 
-    public function getMONEY() : integer
+    public function getUSERMONEY(): integer
     {
-        return $this->MONEY;
+        return $this->USERMONEY;
     }
 
-    public function setMONEY($MONEY)
+    public function setUSERMONEY($USERMONEY)
     {
-        $this->MONEY = $MONEY;
+        $this->USERMONEY = $USERMONEY;
     }
 
 }
