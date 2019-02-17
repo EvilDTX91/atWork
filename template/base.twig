@@ -4,9 +4,9 @@
 {% endblock %}
 
 {% block content %}
-    {% block menu %}{% endblock %}
-    {% block text %}{% endblock %}
-    {% block commercials %}{% endblock %}
+    <div id="menu">{% block menu %}{% endblock %}</div>
+    <div id="text">{% block text %}{% endblock %}</div>
+    <div id="commerials">{% block commercials %}{% endblock %}</div>
 {% endblock %}
 
 {%  block footer %}

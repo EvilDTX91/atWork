@@ -1,20 +1,20 @@
 <?php
 
-namespace atwork\classes\BlackJack;
+namespace atwork\BlackJack;
 class Hands
 {
-    private $playerHands = array();
-    private $dealerHands = array();
+    private static $playerHands = array();
+    private static $dealerHands = array();
 
     public function getPlayerHands(): array
     {
-        return $this->playerHands;
+        return self::$playerHands;
     }
 
     public function setPlayerHands($pieceOfCard, $playerHands)
     {
-        if ($this->checkPlayerCards($playerHands)) {
-            $this->playerHands[$pieceOfCard] = $playerHands;
+        if (self::checkPlayerCards($playerHands)) {
+            self::$playerHands[$pieceOfCard] = $playerHands;
         } else {
 
         }
@@ -22,13 +22,13 @@ class Hands
 
     public function getDealerHands(): array
     {
-        return $this->dealerHands;
+        return self::$dealerHands;
     }
 
     public function setDealerHands($pieceOfCard, $dealerHands)
     {
-        if ($this->checkDealerCards($dealerHands)) {
-            $this->dealerHands[$pieceOfCard] = $dealerHands;
+        if (self::checkDealerCards($dealerHands)) {
+            self::$dealerHands[$pieceOfCard] = $dealerHands;
         } else {
 
         }
@@ -36,7 +36,7 @@ class Hands
 
     private function checkPlayerCards($newCard)
     {
-        if (!array_search($newCard, $this->playerHands)) {
+        if (!array_search($newCard, Self::$playerHands)) {
             return true;
         } else {
             return false;
@@ -45,7 +45,7 @@ class Hands
 
     private function checkDealerCards($newCard)
     {
-        if (!array_search($newCard, $this->dealerHands)) {
+        if (!array_search($newCard, self::$dealerHands)) {
             return true;
         } else {
             return false;

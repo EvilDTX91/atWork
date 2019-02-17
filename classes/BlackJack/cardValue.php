@@ -1,19 +1,16 @@
 <?php
 
-namespace atwork\classes\BlackJack;
+namespace atwork\BlackJack;
 class CardValue
 {
     public function getCardValue($cardname)
     {
-        return cardValue($cardname);
+        return CardValue::cardValue($cardname);
     }
 
     private static function cardValue($cardname)
     {
         Switch ($cardname) {
-            case 'H1':
-                return 1;
-                break;
             case 'H2':
                 return 2;
                 break;
@@ -52,9 +49,6 @@ class CardValue
                 break;
             case 'HA':
                 return 10;
-                break;
-            case 'S1':
-                return 1;
                 break;
             case 'S2':
                 return 2;
@@ -95,9 +89,6 @@ class CardValue
             case 'SA':
                 return 10;
                 break;
-            case 'D1':
-                return 1;
-                break;
             case 'D2':
                 return 2;
                 break;
@@ -136,9 +127,6 @@ class CardValue
                 break;
             case 'DA':
                 return 10;
-                break;
-            case 'C1':
-                return 1;
                 break;
             case 'C2':
                 return 2;
