@@ -38,13 +38,6 @@
             document.getElementById('bjwindows').style.display = 'none';
         }
     }
-
-    $(document).ready(function () {
-        $(document.getElementById("blackJackShow")).click(function () {
-            document.getElementById('bjwindows').style.display = 'block';
-            document.getElementById('calculator').style.display = 'none';
-        });
-    });
     {#$(document).ready(function () {
         $(document.getElementById("blackJackShow")).click(function () {
             $.post('../atwork/index.php', "blackJackShow", function (response) {
@@ -99,6 +92,13 @@
                     alert(response);
                 }
             });*/
+        });
+    });
+
+    $(document).ready(function () {
+        $(document.getElementById("blackJackShow")).click(function () {
+            document.getElementById('bjwindows').style.display = 'block';
+            document.getElementById('calculator').style.display = 'none';
         });
     });
 </script>
