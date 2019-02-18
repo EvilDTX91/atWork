@@ -5,10 +5,81 @@ body {
 
 #menuLine {
     background-color: aquamarine;
-    width: 250px;
+    width: 300px;
     height: 30px;
     border-radius: 6px;
     padding: 5px;
+}
+
+#userMenu {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+#userProfile {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#userFriends {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#userProfileSettings {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#blackJackWindow {
+    background-color: blueviolet;
+    font-size: 20px;
+    height: 25px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 #calculatorShow {
@@ -36,6 +107,7 @@ body {
     border-radius: 12px;
     cursor: pointer;
 }
+
 #bjsystemmessage {
     background-color: black;
     color: gold;
@@ -46,6 +118,7 @@ body {
     text-align: center;
     border-radius: 6px;
 }
+
 #bjwindows {
     background-color: darkred;
     border: solid black;
@@ -112,7 +185,7 @@ body {
     margin: 10px;
 }
 
-#blackJackPlayButton{
+#blackJackPlayButton {
     font-size: 20px;
     background-color: black;
     color: white;
@@ -127,7 +200,7 @@ body {
     cursor: pointer;
 }
 
-#blackJackExitButton{
+#blackJackExitButton {
     font-size: 20px;
     background-color: black;
     color: white;
@@ -142,23 +215,7 @@ body {
     cursor: pointer;
 }
 
-#blackJackBetButton{
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    display: none;
-}
-
-#blackJackCardButton{
+#blackJackBetButton {
     font-size: 20px;
     background-color: black;
     color: white;
@@ -174,7 +231,7 @@ body {
     display: none;
 }
 
-#blackJackRiseButton{
+#blackJackCardButton {
     font-size: 20px;
     background-color: black;
     color: white;
@@ -190,7 +247,7 @@ body {
     display: none;
 }
 
-#blackJackHoldButton{
+#blackJackRiseButton {
     font-size: 20px;
     background-color: black;
     color: white;
@@ -206,7 +263,23 @@ body {
     display: none;
 }
 
-#blackJackFoldButton{
+#blackJackHoldButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#blackJackFoldButton {
     font-size: 20px;
     background-color: black;
     color: white;

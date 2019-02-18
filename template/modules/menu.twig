@@ -1,10 +1,22 @@
 <div id="menuLine">
-    <form id="blackjackForm" action="../atwork/index.php" method="post">
-        <input type="submit" id="calculatorShow" name="calculatorShow" value="Calculator"
-               onmouseenter="changeColor('calculatorShow')"
-               onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')"/>
-        <input type="submit" id="blackJackShow" name="blackJackShow" value="BlackJack"/>
-    </form>
+    <div>
+        <button id="userMenu" name="userMenu" onmouseenter="showOrHide('userMenu')"
+                onmouseleave="showOrHide('noUserMenu')">User</button>
+        <button id="userProfile" name="userProfile">Profil</button>
+        <button id="userFriends" name="userFriends">Friends</button>
+        <button id="userProfileSettings" name="userProfileSettings">Settings</button>
+        <button id="blackJackWindow" name="blackJackWindow">BlackJackWindow</button>
+    </div>
+    <div>
+        <form id="blackjackForm" action="../atwork/index.php" method="post">
+            <input type="submit" id="calculatorShow" name="calculatorShow" value="Calculator"
+                   onmouseenter="changeColor('calculatorShow')"
+                   onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')"/>
+            <input type="submit" id="blackJackShow" name="blackJackShow" value="BlackJack"
+                   onmouseenter="changeColor('blackJackShow')"
+                   onmouseleave="changeColor('nope')"/>
+        </form>
+    </div>
     {#<input type="submit" id="calculatorShow" nane="calculatorShow" value="Calculator"
            onmouseenter="changeColor('calculatorShow')"
            onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')"/>
@@ -33,11 +45,20 @@
         } else if (showthis == 'blackjack') {
             document.getElementById('bjwindows').style.display = 'block';
             document.getElementById('calculator').style.display = 'none';
+        } else if (showthis == 'userMenu') {
+            document.getElementById('userProfile').style.display = 'block';
+            document.getElementById('userFriends').style.display = 'block';
+            document.getElementById('userProfileSettings').style.display = 'block';
+        } else if (showthis == 'noUserMenu') {
+            document.getElementById('userProfile').style.display = 'none';
+            document.getElementById('userFriends').style.display = 'none';
+            document.getElementById('userProfileSettings').style.display = 'none';
         } else {
             document.getElementById('calculator').style.display = 'none';
             document.getElementById('bjwindows').style.display = 'none';
         }
     }
+
     {#$(document).ready(function () {
         $(document.getElementById("blackJackShow")).click(function () {
             $.post('../atwork/index.php', "blackJackShow", function (response) {
@@ -74,7 +95,7 @@
                 url: "../atwork/index.php",
                 cache: false,
                 data: 'blackJackShow',
-                success:                    alert('Form Action Success'),
+                success: alert('Form Action Success'),
             });
             /*$.ajax({
                 type: "POST",
@@ -99,6 +120,26 @@
         $(document.getElementById("blackJackShow")).click(function () {
             document.getElementById('bjwindows').style.display = 'block';
             document.getElementById('calculator').style.display = 'none';
+        });
+    });
+    $(document).ready(function () {
+        $(document.getElementById("blackJackWindow")).click(function () {
+            document.getElementById('bjwindows').style.display = 'block';
+            document.getElementById('calculator').style.display = 'none';
+        });
+    });
+    $(document).ready(function () {
+        $(document.getElementById("userMenu")).onmouseenter(function () {
+            document.getElementById('userProfile').style.display = 'block';
+            document.getElementById('userFriends').style.display = 'block';
+            document.getElementById('userProfileSettings').style.display = 'block';
+        });
+    });
+    $(document).ready(function () {
+        $(document.getElementById("userMenu")).onmouseleave(function () {
+            document.getElementById('userProfile').style.display = 'none';
+            document.getElementById('userFriends').style.display = 'none';
+            document.getElementById('userProfileSettings').style.display = 'none';
         });
     });
 </script>

@@ -16,6 +16,9 @@ if (isset($_POST['blackJackShow'])) {
     echo "***********************************Hello world! Can you see me!?***********************************</br>";
     echo "***********************************Hello world! Can you see me!?***********************************</br>";
     echo "***********************************Hello world! Can you see me!?***********************************</br>";
+    echo "***********************************Hello world! Can you see me!?***********************************</br>";
+    echo "***********************************Hello world! Can you see me!?***********************************</br>";
+    echo "***********************************Hello world! Can you see me!?***********************************</br>";
     echo "</br>";
 
     $obj = new atwork\BlackJack\GameEngine;
