@@ -1,10 +1,46 @@
 <div id="bjwindows">
+    <div id="bjsystemmessage">
+        {% block systemMessage %}
+            {% include 'modules/systemMessage.twig' %}
+        {% endblock %}
+    </div>
     <div id="dealerwindow">
-        <div id="dealerCards"></div>
-        <div id="dealerData"></div>
+        <div id="dealerCards">
+            {% block dealerCards %}
+                {#{% for value in dealerCards %}
+                    {% include 'modules/dealerCards.twig' with { cards : value } %}
+                {% endfor %}#}
+                {% for value in dealerCardPictures %}
+                    {% include 'modules/dealerCards.twig' with { pictures : value } %}
+                {% endfor %}
+            {% endblock %}
+        </div>
+        <div id="dealerData">
+            {% block dealerData %}
+                {% include 'modules/dealerData.twig' %}
+            {% endblock %}
+        </div>
     </div>
     <div id="playerwindow">
-        <div id="playerCards"></div>
-        <div id="playerData"></div>
+        <div id="playerCards">
+            {% block playerCards %}
+                {#{% for value in playerCards %}
+                        {% include 'modules/playerCards.twig' with { cards : value } %}
+                    {% endfor %}#}
+                {% for value in playerCardPictures %}
+                    {% include 'modules/playerCards.twig' with { pictures : value } %}
+                {% endfor %}
+            {% endblock %}
+        </div>
+        <div id="playerData">
+            {% block playerData %}
+                {% include 'modules/playerData.twig' %}
+            {% endblock %}
+        </div>
+        <div id="blackJackPlayButtonCollection">
+            {% block bjgamemenu %}
+                {% include 'modules/bjgamemenu.twig' %}
+            {% endblock %}
+        </div>
     </div>
 </div>

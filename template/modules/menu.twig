@@ -1,19 +1,25 @@
 <div id="menuLine">
-    <button id="calculatorShow" onmouseenter="changeColor('calculatorShow')" onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')">Calculator</button>
-    <button id="blackJackShow" onmouseenter="changeColor('blackJackShow')" onmouseleave="changeColor('nope')" onclick="showOrHide('blackjack')">BlackJack</button>
+    <form id="blackjackForm" action="../atwork/index.php" method="post">
+        <input type="submit" id="calculatorShow" name="calculatorShow" value="Calculator"
+               onmouseenter="changeColor('calculatorShow')"
+               onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')"/>
+        <input type="submit" id="blackJackShow" name="blackJackShow" value="BlackJack"/>
+    </form>
+    {#<input type="submit" id="calculatorShow" nane="calculatorShow" value="Calculator"
+           onmouseenter="changeColor('calculatorShow')"
+           onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')"/>
+    <button id="blackJackShow">BlackJack</button>#}
 </div>
 <script>
     function
     changeColor(colorChangedButton) {
-        if(colorChangedButton == 'calculatorShow') {
+        if (colorChangedButton == 'calculatorShow') {
             document.getElementById('calculatorShow').style.backgroundColor = 'yellow';
             document.getElementById('blackJackShow').style.backgroundColor = 'aqua';
-        }
-        else if(colorChangedButton == 'blackJackShow') {
+        } else if (colorChangedButton == 'blackJackShow') {
             document.getElementById('blackJackShow').style.backgroundColor = 'yellow';
             document.getElementById('calculatorShow').style.backgroundColor = 'aqua';
-        }
-        else {
+        } else {
             document.getElementById('calculatorShow').style.backgroundColor = 'aqua';
             document.getElementById('blackJackShow').style.backgroundColor = 'aqua';
         }
@@ -27,10 +33,72 @@
         } else if (showthis == 'blackjack') {
             document.getElementById('bjwindows').style.display = 'block';
             document.getElementById('calculator').style.display = 'none';
-        }
-        else {
+        } else {
             document.getElementById('calculator').style.display = 'none';
             document.getElementById('bjwindows').style.display = 'none';
         }
     }
+
+    $(document).ready(function () {
+        $(document.getElementById("blackJackShow")).click(function () {
+            document.getElementById('bjwindows').style.display = 'block';
+            document.getElementById('calculator').style.display = 'none';
+        });
+    });
+    {#$(document).ready(function () {
+        $(document.getElementById("blackJackShow")).click(function () {
+            $.post('../atwork/index.php', "blackJackShow", function (response) {
+                // Log the response to the console
+                console.log("Response: " + response);
+                alert("WTF Succes");
+            });
+        });
+    });
+
+    /* attach a submit handler to the form */
+    $("#blackjackForm").submit(function(event) {
+
+        /* stop form from submitting normally */
+        event.preventDefault();
+
+        /* get the action attribute from the <form action=""> element */
+        var $form = $( this ),
+            url = $form.attr( 'action' );
+
+        /* Send the data using post with element id name and name2*/
+        var posting = $.post( url, 'blackJackShow');
+
+        /* Alerts the results */
+        posting.done(function( data ) {
+            alert('Form Action Success');
+        });
+    });#}
+
+    $(document).ready(function () {
+        $(document.getElementById("blackJackShow")).click(function (event) {
+            $.ajax({
+                type: "POST",
+                url: "../atwork/index.php",
+                cache: false,
+                data: 'blackJackShow',
+                success:                    alert('Form Action Success'),
+            });
+            /*$.ajax({
+                type: "POST",
+                url: '../atwork/index.php',
+                data: 'blackJackShow',
+
+                success: function (response) {
+                    alert(response);
+                }
+            });
+            /*$.ajax({
+                url: 'index.php',
+                data: 'blackJackShow',
+                success: function (response) {//response is value returned from php (for your example it's "bye bye"
+                    alert(response);
+                }
+            });*/
+        });
+    });
 </script>

@@ -1,41 +1,56 @@
 <?php
 
-namespace atwork\classes\BlackJack;
+namespace atwork\BlackJack;
 
 class PlayerData
 {
-    private $USERNAME;
-    private $EMAIL;
-    private $USERMONEY;
+    private static $USERNAME;
+    private static $EMAIL;
+    private static $USERMONEY;
+    private static $PLAYERCARDSCORE;
+
+    public function getPLAYERCARDSCORE(): int
+    {
+        if (self::$PLAYERCARDSCORE == null) {
+            return 0;
+        } else {
+            return self::$PLAYERCARDSCORE;
+        }
+    }
+
+    public function setPLAYERCARDSCORE($PLAYERCARDSCORE): void
+    {
+        self::$PLAYERCARDSCORE = $PLAYERCARDSCORE;
+    }
 
     public function getUSERNAME(): string
     {
-        return $this->USERNAME;
+        return self::$USERNAME;
     }
 
     public function setUSERNAME($USERNAME)
     {
-        $this->USERNAME = $USERNAME;
+        self::$USERNAME = $USERNAME;
     }
 
     public function getEMAIL(): string
     {
-        return $this->EMAIL;
+        return self::$EMAIL;
     }
 
     public function setEMAIL($EMAIL)
     {
-        $this->EMAIL = $EMAIL;
+        self::$EMAIL = $EMAIL;
     }
 
     public function getUSERMONEY(): integer
     {
-        return $this->USERMONEY;
+        return self::$USERMONEY;
     }
 
     public function setUSERMONEY($USERMONEY)
     {
-        $this->USERMONEY = $USERMONEY;
+        self::$USERMONEY = $USERMONEY;
     }
 
 }

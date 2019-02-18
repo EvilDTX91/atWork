@@ -1,18 +1,22 @@
 <?php
 
-namespace atwork\classes\BlackJack;
+namespace atwork\BlackJack;
 
 class DealerData
 {
-    private $DEALERMONEY;
+    private static $DEALERCARDSCORE;
 
-    public function getDEALERMONEY(): integer
+    public function getDEALERCARDSCORE(): int
     {
-        return $this->DEALERMONEY;
+        if (self::$DEALERCARDSCORE == null) {
+            return 0;
+        } else {
+            return self::$DEALERCARDSCORE;
+        }
     }
 
-    public function setDEALERMONEY($DEALERMONEY): integer
+    public function setDEALERCARDSCORE($DEALERCARDSCORE): void
     {
-        $this->DEALERMONEY = $DEALERMONEY;
+        self::$DEALERCARDSCORE = $DEALERCARDSCORE;
     }
 }
