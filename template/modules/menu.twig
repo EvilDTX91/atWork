@@ -1,13 +1,23 @@
 <div id="menuLine">
-    <div>
-        <button id="userMenu" name="userMenu" onmouseenter="showOrHide('userMenu')"
-                onmouseleave="showOrHide('noUserMenu')">User</button>
-        <button id="userProfile" name="userProfile">Profil</button>
-        <button id="userFriends" name="userFriends">Friends</button>
-        <button id="userProfileSettings" name="userProfileSettings">Settings</button>
-        <button id="blackJackWindow" name="blackJackWindow">BlackJackWindow</button>
+    <div class="menuMain" id="menuMain">
+        <ul>
+            <li class="menuMainElements"><a href="#" onmouseenter="showOrHide('userMenu')" onmouseleave="showOrHide('noUserMenu')"><label>User</label></a>
+                <ul>
+                    <li class="menuElements"><a href="#" id="userMenu1"><label>Profil</label></a></li>
+                    <li class="menuElements"><a href="#" id="userMenu2"><label>Friends</label></a></li>
+                    <li class="menuElements"><a href="#" id="userMenu3"><label>Settings</label></a></li>
+                </ul>
+            </li>
+            <li class="menuMainElements"><a href="#"><label>Information</label></a>
+                <ul>
+                    <li class="menuElements"><a href="#"><label>Company</label></a></li>
+                </ul>
+            </li>
+            <li class="menuMainElements"><a href="#"><label>Search</label></a></li>
+        </ul>
     </div>
-    <div>
+    <button id="blackJackWindow" name="blackJackWindow">BlackJackWindow</button>
+    <div class="menuFirst">
         <form id="blackjackForm" action="../atwork/index.php" method="post">
             <input type="submit" id="calculatorShow" name="calculatorShow" value="Calculator"
                    onmouseenter="changeColor('calculatorShow')"
@@ -46,16 +56,22 @@
             document.getElementById('bjwindows').style.display = 'block';
             document.getElementById('calculator').style.display = 'none';
         } else if (showthis == 'userMenu') {
-            document.getElementById('userProfile').style.display = 'block';
-            document.getElementById('userFriends').style.display = 'block';
-            document.getElementById('userProfileSettings').style.display = 'block';
+            document.getElementById('userMenu1').style.display = 'block';
+            document.getElementById('userMenu2').style.display = 'block';
+            document.getElementById('userMenu3').style.display = 'block';
         } else if (showthis == 'noUserMenu') {
+            document.getElementById('userMenu1').style.display = 'none';
+            document.getElementById('userMenu2').style.display = 'none';
+            document.getElementById('userMenu3').style.display = 'none';
             document.getElementById('userProfile').style.display = 'none';
             document.getElementById('userFriends').style.display = 'none';
             document.getElementById('userProfileSettings').style.display = 'none';
         } else {
             document.getElementById('calculator').style.display = 'none';
             document.getElementById('bjwindows').style.display = 'none';
+            document.getElementById('userMenu1').style.display = 'none';
+            document.getElementById('userMenu2').style.display = 'none';
+            document.getElementById('userMenu3').style.display = 'none';
         }
     }
 
@@ -126,20 +142,6 @@
         $(document.getElementById("blackJackWindow")).click(function () {
             document.getElementById('bjwindows').style.display = 'block';
             document.getElementById('calculator').style.display = 'none';
-        });
-    });
-    $(document).ready(function () {
-        $(document.getElementById("userMenu")).onmouseenter(function () {
-            document.getElementById('userProfile').style.display = 'block';
-            document.getElementById('userFriends').style.display = 'block';
-            document.getElementById('userProfileSettings').style.display = 'block';
-        });
-    });
-    $(document).ready(function () {
-        $(document.getElementById("userMenu")).onmouseleave(function () {
-            document.getElementById('userProfile').style.display = 'none';
-            document.getElementById('userFriends').style.display = 'none';
-            document.getElementById('userProfileSettings').style.display = 'none';
         });
     });
 </script>
