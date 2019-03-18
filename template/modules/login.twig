@@ -1,0 +1,39 @@
+<div id="login">
+    <form id="loginForm" method="POST">
+        <div><label>Username:</label>
+            <input type="text" id="usernameLogin" onchange="validator()" required>
+        </div>
+        <div>
+            <lable>Password:</lable>
+            <input type="password" id="passwordLogin" onchange="validator()" required>
+        </div>
+        <div>
+            <input type="submit" name="sendLoginRequest" id="sendLoginRequest" value="Login">
+            <input type="reset" name="resetLogin" id="resetLogin" value="Cancel">
+            <input type="submit" name="forgotPasswordLogin" id="forgotPasswordLogin" value="Forgot Password">
+        </div>
+    </form>
+</div>
+<script>
+    function validator() {
+        var x = document.getElementById('usernameLogin').value;
+        if (x !== 'admin') {
+            document.getElementById('usernameLogin').style.border = 'solid red';
+            document.getElementById('sendLoginRequest').style.pointerEvents = 'none';
+            document.getElementById('sendLoginRequest').style.color = 'grey';
+        } else {
+            document.getElementById('usernameLogin').style.border = 'solid green';
+
+            var y = document.getElementById('passwordLogin').value;
+            if (y !== '1234') {
+                document.getElementById('passwordLogin').style.border = 'solid red';
+                document.getElementById('sendLoginRequest').style.pointerEvents = 'none';
+                document.getElementById('sendLoginRequest').style.color = 'grey';
+            } else {
+                document.getElementById('passwordLogin').style.border = 'solid green';
+                document.getElementById('sendLoginRequest').style.pointerEvents = 'auto';
+                document.getElementById('sendLoginRequest').style.color = 'black';
+            }
+        }
+    }
+</script>
