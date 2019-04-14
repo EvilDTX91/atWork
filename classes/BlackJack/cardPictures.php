@@ -6,12 +6,7 @@ class CardPictures
 {
     public function getPlayerCardsPicture(): array
     {
-        $hands = new Hands();
-        $playerCards = $hands->getPlayerHands();
-        echo "</br>";
-        echo "</br>";
-        print_r($playerCards);
-        echo "</br>";
+        $playerCards = $_SESSION['playerCards'];
         $playerPictureCards = Array();
 
         for ($i = 0; $i < sizeof($playerCards); $i++) {
@@ -22,11 +17,7 @@ class CardPictures
 
     public function getDealerCardsPicture(): array
     {
-        $hands = new Hands();
-        $dealerCards = $hands->getDealerHands();
-        print_r($dealerCards);
-        echo "</br>";
-        echo "</br>";
+        $dealerCards = $_SESSION['dealerCards'];
         $dealerPictureCards = Array();
 
         for ($i = 0; $i < sizeof($dealerCards); $i++) {

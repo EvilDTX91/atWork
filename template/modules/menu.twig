@@ -1,36 +1,99 @@
 <div id="menuLine">
-    <div class="menuMain" id="menuMain">
+    <div class="userMenu">
         <ul>
-            <li class="menuMainElements"><a href="#" onmouseenter="showOrHide('userMenu')" onmouseleave="showOrHide('noUserMenu')"><label>User</label></a>
+            <li class="mainMenuElementsli"><a href="#" class="mainMenuElements" id="menuMainElement1"
+                                              onmouseover="showOrHide('userMenu')"
+                                              onmouseout="showOrHide('noMenu')"><label>User</label></a>
                 <ul>
-                    <li class="menuElements"><a href="#" id="userMenu1"><label>Profil</label></a></li>
-                    <li class="menuElements"><a href="#" id="userMenu2"><label>Friends</label></a></li>
-                    <li class="menuElements"><a href="#" id="userMenu3"><label>Settings</label></a></li>
+                    <div class="dropdown">
+                        <form id="mainMenu1Form" method="post">
+                            <li>
+                                <input type="submit" class="menuUserElements" id="menuUserElement1"
+                                       name="profileShow" value="Profil"
+                                       onmouseover="showOrHide('userMenu')"
+                                       onmouseout="showOrHide('noMenu')"/>
+                                {#<a href="#" class="menuUserElements" id="menuUserElement1"
+                                   onmouseover="showOrHide('userMenu')"
+                                   onmouseout="showOrHide('noMenu')"><label>Profil</label></a>#}
+                            </li>
+                            <li><a href="#" class="menuUserElements" id="menuUserElement2"
+                                   onmouseover="showOrHide('userMenu')"
+                                   onmouseout="showOrHide('noMenu')"><label>Friends</label></a>
+                            </li>
+                            <li><a href="#" class="menuUserElements" id="menuUserElement3"
+                                   onmouseover="showOrHide('userMenu')"
+                                   onmouseout="showOrHide('noMenu')"><label>Settings</label></a>
+                            </li>
+                            <li>
+                                <input type="submit" class="menuUserElements" id="menuUserElement4"
+                                       name="profileLogout" value="Logout"
+                                       onmouseover="showOrHide('userMenu')"
+                                       onmouseout="showOrHide('noMenu')"/>
+                                {#<a href="#" class="menuUserElements" id="menuUserElement1"
+                                   onmouseover="showOrHide('userMenu')"
+                                   onmouseout="showOrHide('noMenu')"><label>Profil</label></a>#}
+                            </li>
+
+                        </form>
+                    </div>
                 </ul>
             </li>
-            <li class="menuMainElements"><a href="#"><label>Information</label></a>
+            <li class="mainMenuElementsli"><a href="#" class="mainMenuElements" id="menuMainElement2"
+                                              onmouseover="showOrHide('informationMenu')"
+                                              onmouseout="showOrHide('noMenu')"><label>Information</label></a>
                 <ul>
-                    <li class="menuElements"><a href="#"><label>Company</label></a></li>
+                    <div class="dropdown">
+                        <li><a href="#" class="menuInfoElements" id="menuInformationElement1"
+                               onmouseover="showOrHide('informationMenu')"
+                               onmouseout="showOrHide('noMenu')"><label>Company</label></a>
+                        </li>
+                        <li><a href="#" class="menuInfoElements" id="menuInformationElement2"
+                               onmouseover="showOrHide('informationMenu')"
+                               onmouseout="showOrHide('noMenu')"><label>Connection</label></a>
+                        </li>
+                    </div>
                 </ul>
             </li>
-            <li class="menuMainElements"><a href="#"><label>Search</label></a></li>
+            <li class="mainMenuElementsli"><a href="#" class="mainMenuElements"
+                                              id="menuMainElement3"><label>Search</label></a></li>
+
+            <li class="mainMenuElementsli"><a href="#" class="mainMenuElements" id="menuMainElement4"
+                                              onmouseover="showOrHide('applicationMenu')"
+                                              onmouseout="showOrHide('noMenu')"><label>Applications</label></a>
+                <ul>
+                    <div class="dropdown">
+                        <form id="blackjackForm" method="post">
+                            <li>
+                                <input type="submit" class="menuAppElements" id="menuAppElement1" name="calculatorShow"
+                                       value="Calculator"
+                                       onmouseover="showOrHide('applicationMenu')"
+                                       onmouseout="showOrHide('noMenu')"/>
+                            </li>
+                            <li>
+                                <input type="submit" class="menuAppElements" id="menuAppElement2" name="blackJackShow"
+                                       value="BlackJack"
+                                       onmouseover="showOrHide('applicationMenu')"
+                                       onmouseout="showOrHide('noMenu')"/>
+                            </li>
+                        </form>
+                    </div>
+                </ul>
+            </li>
         </ul>
     </div>
-    <button id="blackJackWindow" name="blackJackWindow">BlackJackWindow</button>
+    {#
     <div class="menuFirst">
-        <form id="blackjackForm" action="../atwork/index.php" method="post">
+        <form id="blackjackForm" method="post">
             <input type="submit" id="calculatorShow" name="calculatorShow" value="Calculator"
                    onmouseenter="changeColor('calculatorShow')"
                    onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')"/>
+
             <input type="submit" id="blackJackShow" name="blackJackShow" value="BlackJack"
                    onmouseenter="changeColor('blackJackShow')"
                    onmouseleave="changeColor('nope')"/>
         </form>
     </div>
-    {#<input type="submit" id="calculatorShow" nane="calculatorShow" value="Calculator"
-           onmouseenter="changeColor('calculatorShow')"
-           onmouseleave="changeColor('nope')" onclick="showOrHide('calculator')"/>
-    <button id="blackJackShow">BlackJack</button>#}
+    #}
 </div>
 <script>
     function
@@ -49,86 +112,79 @@
 
     function
     showOrHide(showthis) {
-        if (showthis == 'calculator') {
-            document.getElementById('bjwindows').style.display = 'none';
-            document.getElementById('calculator').style.display = 'block';
-        } else if (showthis == 'blackjack') {
-            document.getElementById('bjwindows').style.display = 'block';
-            document.getElementById('calculator').style.display = 'none';
-        } else if (showthis == 'userMenu') {
-            document.getElementById('userMenu1').style.display = 'block';
-            document.getElementById('userMenu2').style.display = 'block';
-            document.getElementById('userMenu3').style.display = 'block';
-        } else if (showthis == 'noUserMenu') {
-            document.getElementById('userMenu1').style.display = 'none';
-            document.getElementById('userMenu2').style.display = 'none';
-            document.getElementById('userMenu3').style.display = 'none';
-            document.getElementById('userProfile').style.display = 'none';
-            document.getElementById('userFriends').style.display = 'none';
-            document.getElementById('userProfileSettings').style.display = 'none';
+        if (showthis == 'userMenu') {
+            var x = document.getElementsByClassName("menuUserElements");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+            var y = document.getElementsByClassName("menuInfoElements");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            var z = document.getElementsByClassName("menuAppElements");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+        } else if (showthis == 'informationMenu') {
+            var x = document.getElementsByClassName("menuInfoElements");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+            var y = document.getElementsByClassName("menuUserElements");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            var z = document.getElementsByClassName("menuAppElements");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+        } else if (showthis == 'applicationMenu') {
+            var x = document.getElementsByClassName("menuAppElements");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+            var y = document.getElementsByClassName("menuInfoElements");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            var z = document.getElementsByClassName("menuUserElements");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+        } else if (showthis == 'noMenu') {
+            var x = document.getElementsByClassName("menuUserElements");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            var y = document.getElementsByClassName("menuInfoElements");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            var z = document.getElementsByClassName("menuAppElements");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
         } else {
-            document.getElementById('calculator').style.display = 'none';
-            document.getElementById('bjwindows').style.display = 'none';
-            document.getElementById('userMenu1').style.display = 'none';
-            document.getElementById('userMenu2').style.display = 'none';
-            document.getElementById('userMenu3').style.display = 'none';
+            var x = document.getElementsByClassName("menuUserElements");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            var y = document.getElementsByClassName("menuInfoElements");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            var z = document.getElementsByClassName("menuAppElements");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
         }
     }
 
-    {#$(document).ready(function () {
-        $(document.getElementById("blackJackShow")).click(function () {
-            $.post('../atwork/index.php', "blackJackShow", function (response) {
-                // Log the response to the console
-                console.log("Response: " + response);
-                alert("WTF Succes");
-            });
-        });
-    });
-
-    /* attach a submit handler to the form */
-    $("#blackjackForm").submit(function(event) {
-
-        /* stop form from submitting normally */
-        event.preventDefault();
-
-        /* get the action attribute from the <form action=""> element */
-        var $form = $( this ),
-            url = $form.attr( 'action' );
-
-        /* Send the data using post with element id name and name2*/
-        var posting = $.post( url, 'blackJackShow');
-
-        /* Alerts the results */
-        posting.done(function( data ) {
-            alert('Form Action Success');
-        });
-    });#}
-
+    /*
     $(document).ready(function () {
-        $(document.getElementById("blackJackShow")).click(function (event) {
-            $.ajax({
-                type: "POST",
-                url: "../atwork/index.php",
-                cache: false,
-                data: 'blackJackShow',
-                success: alert('Form Action Success'),
-            });
-            /*$.ajax({
-                type: "POST",
-                url: '../atwork/index.php',
-                data: 'blackJackShow',
-
-                success: function (response) {
-                    alert(response);
-                }
-            });
-            /*$.ajax({
-                url: 'index.php',
-                data: 'blackJackShow',
-                success: function (response) {//response is value returned from php (for your example it's "bye bye"
-                    alert(response);
-                }
-            });*/
+        $(document.getElementById("calculatorShow")).click(function () {
+            document.getElementById('bjwindows').style.display = 'none';
+            document.getElementById('calculator').style.display = 'block';
         });
     });
 
@@ -143,5 +199,5 @@
             document.getElementById('bjwindows').style.display = 'block';
             document.getElementById('calculator').style.display = 'none';
         });
-    });
+    });*/
 </script>

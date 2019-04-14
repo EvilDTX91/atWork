@@ -2,12 +2,16 @@
 {% block content %}
     <body>
     {% block menu %}
-        <div>
-            ooooyeah!
-        </div>
+        {% include 'modules/menu.twig' %}
+    {% endblock %}
+    {% block leftsidetext %}
+        {% include leftsidetext %}
     {% endblock %}
     {% block text %}
         {% include 'partial/content.twig' %}
+    {% endblock %}
+    {% block commercials %}
+        {% include contents %}
     {% endblock %}
     </body>
 {% endblock %}

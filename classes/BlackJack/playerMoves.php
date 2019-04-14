@@ -8,7 +8,8 @@ class PlayerMoves
     public function playerNextMove($nextMove)
     {
         if ($nextMove == 'newCard') {
-            $this->playerNewCard();
+            $newCardPlayer=$this->playerNewCard();
+            return $newCardPlayer;
         } else if ($nextMove == 'PlayerExit') {
 
         } else {
@@ -18,18 +19,24 @@ class PlayerMoves
 
     private function playerNewCard()
     {
-        $hands = new Hands();
         $pullcard = new PullCards();
         $playerData = new PlayerData();
         $cardValue = new CardValue();
 
-        $hands->setPlayerHands(sizeof($hands->getPlayerHands()), $pullcard->getOneCard());
-        $playercards = $hands->getPlayerHands();
-        $playerNewScore = $playerData->getPLAYERCARDSCORE() + $cardValue->getCardValue($playercards[sizeof($playercards)-1]);
-        $playerData->setPLAYERCARDSCORE($playerNewScore);
+        $newCardPlayer = '';
 
-        echo "</br>";
-        print_r($playercards);
-        echo "</br>Player pull new card..." . $playercards[sizeof($playercards)-1] . "</br> Player New Score: " . $playerData->getPLAYERCARDSCORE();
+        while(array_search($newCardPlayer, $_SESSION['playerCards']) || $newCardPlayer == '' || array_search($newCardPlayer, $_SESSION['dealerCards']))
+        {
+            $playerScore = $_SESSION['playerScore'];
+            $newCardPlayer = $pullcard->getOneCard();
+            echo "+++++++++++++++++++++++++++++++++++++++++++++++++";
+        }
+        array_push($_SESSION['playerCards'], $newCardPlayer);
+
+        $newScore = $cardValue->getCardValue($newCardPlayer);
+        $setScore = ($playerScore + $newScore);
+        $playerData->setPLAYERCARDSCORE($setScore);
+
+        return $newCardPlayer;
     }
 }

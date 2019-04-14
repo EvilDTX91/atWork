@@ -1,4 +1,4 @@
 {% block playerData %}
-    <div><label>Username:</label> Teszt1</div>
-    <div><label>Player Score:</label> {{ playerScore }}</div>
+    <div><label>Username:</label> {{ session.username }}</div>
+    <div><label>Player Score:</label> {{ session.playerScore }}</div>
 {% endblock %}

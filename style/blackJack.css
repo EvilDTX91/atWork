@@ -1,0 +1,251 @@
+
+#blackJackShow {
+    background-color: aqua;
+    font-size: 20px;
+    width: 110px;
+    height: 25px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.blackJackMainMenuElements {
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    float: left;
+    padding: 10px;
+    margin-top: 25%;
+    margin-left: 15%;
+    margin-right: 1%;
+    margin-bottom: 20%;
+    cursor: pointer;
+}
+
+.blackJackMainMenuElements:hover {
+    font-size: 45px;
+    text-align: center;
+    background-color: gold;
+    color: red;
+    border: solid gold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#blackJackMainMenu{
+    background-color: darkgreen;
+    border: solid black;
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+    padding: 3px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+#bjsystemmessage {
+    background-color: black;
+    color: gold;
+    font-size: 25px;
+    width: 99%;
+    height: 35px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#bjwindows {
+    background-color: darkred;
+    border: solid black;
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+    padding: 3px;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+#dealerwindow {
+    background-color: darkgreen;
+    font-size: 20px;
+    width: 90%;
+    height: 40%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    border-radius: 12px;
+}
+
+#dealerCards {
+    background-color: lightgreen;
+    width: 67%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#dealerData {
+    background-color: white;
+    width: 27%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#playerwindow {
+    background-color: darkgreen;
+    font-size: 20px;
+    width: 90%;
+    height: 40%;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 12px;
+}
+
+#playerCards {
+    background-color: lightgreen;
+    width: 67%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#playerData {
+    background-color: white;
+    width: 27%;
+    height: 90%;
+    float: left;
+    margin: 10px;
+}
+
+#blackJackPlayButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#blackJackNewGameButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#blackJackExitButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#blackJackBetButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#blackJackCardButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#blackJackRiseButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#blackJackHoldButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#blackJackFoldButton {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}

@@ -10,7 +10,7 @@
                 {#{% for value in dealerCards %}
                     {% include 'modules/dealerCards.twig' with { cards : value } %}
                 {% endfor %}#}
-                {% for value in dealerCardPictures %}
+                {% for value in session.dealerCardPictures %}
                     {% include 'modules/dealerCards.twig' with { pictures : value } %}
                 {% endfor %}
             {% endblock %}
@@ -27,7 +27,7 @@
                 {#{% for value in playerCards %}
                         {% include 'modules/playerCards.twig' with { cards : value } %}
                     {% endfor %}#}
-                {% for value in playerCardPictures %}
+                {% for value in session.playerCardPictures %}
                     {% include 'modules/playerCards.twig' with { pictures : value } %}
                 {% endfor %}
             {% endblock %}

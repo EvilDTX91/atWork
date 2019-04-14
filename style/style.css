@@ -3,42 +3,15 @@ body {
     color: red;
 }
 
-.menuMain {
-    float: left;
-    width: 750px;
-    height: 200px;
-    list-style-type: none;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.menuMain ul {
-    list-style-type: none;
-}
-
-.menuMainElements a {
-    font-size: 20px;
-    text-decoration: none;
-    width: 120px;
-    height: 25px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    float: left;
-    cursor: pointer;
-}
-
-.menuMainElements a:hover {
+a {
     font-size: 25px;
-    height: 30px;
-    background-color: yellow;
-    color: black;
-    border: solid red;
-}
-
-.menuElements a {
-    font-size: 20px;
-    text-decoration: none;
     width: 80px;
     height: 25px;
     text-align: center;
@@ -46,36 +19,159 @@ body {
     color: white;
     border: solid gold;
     border-radius: 10px;
-    float: left;
     cursor: pointer;
-    display: none;
+    text-decoration: none;
 }
 
-.menuElements a:hover{
+a:hover {
     font-size: 25px;
     height: 30px;
     background-color: green;
     color: black;
     border: solid red;
+    box-shadow: 5px 10px 18px red;
 }
 
-#menuLine {
-    background-color: aquamarine;
-    width: 300px;
-    height: 30px;
-    border-radius: 6px;
-    padding: 5px;
+.leftsidetext {
+    float: left;
+    background-color: green;
 }
 
-#userMenu {
-    font-size: 20px;
+.text {
+    position: static;
+    float: left;
+    background-color: green;
+}
+
+.commerials {
+    float: right;
+    background-color: green;
+}
+
+.dropdown {
+    position: absolute;
+    box-shadow: 5px 10px 18px ghostwhite;
+    z-index: 1;
+}
+
+.mainMenuElementsli {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.mainMenuElements {
+    width: 200px;
+    font-size: 25px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menuUserElements {
+    display: none;
+    width: 225px;
+}
+
+.menuInfoElements {
+    display: none;
+    width: 225px;
+}
+
+.menuAppElements {
+    display: none;
+    width: 225px;
+}
+
+#menuUserElement1 {
+    font-size: 25px;
+    width: 225px;
+    height: 35px;
+    text-align: center;
     background-color: black;
     color: white;
     border: solid gold;
     border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#menuUserElement1:hover {
+    font-size: 25px;
+    height: 40px;
+    background-color: green;
+    color: black;
+    border: solid red;
+    box-shadow: 5px 10px 18px red;
+}
+
+#menuUserElement4 {
+    font-size: 25px;
+    width: 225px;
+    height: 35px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menuUserElement4:hover {
+    font-size: 25px;
+    height: 40px;
+    background-color: green;
+    color: black;
+    border: solid red;
+    box-shadow: 5px 10px 18px red;
+}
+
+#menuAppElement1 {
+    font-size: 25px;
+    width: 225px;
+    height: 35px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menuAppElement1:hover {
+    font-size: 25px;
+    height: 40px;
+    background-color: green;
+    color: black;
+    border: solid red;
+    box-shadow: 5px 10px 18px red;
+}
+
+#menuAppElement2 {
+    font-size: 25px;
+    width: 225px;
+    height: 35px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menuAppElement2:hover {
+    font-size: 25px;
+    height: 40px;
+    background-color: green;
+    color: black;
+    border: solid red;
+    box-shadow: 5px 10px 18px red;
 }
 
 #userProfile {
@@ -126,16 +222,20 @@ body {
     display: none;
 }
 
-#blackJackWindow {
-    background-color: blueviolet;
+#profileLogout {
     font-size: 20px;
-    height: 25px;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 1%;
-    margin-bottom: 5%;
-    border-radius: 12px;
+    background-color: black;
+    color: white;
+    border: solid gold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
     cursor: pointer;
+    display: none;
 }
 
 #calculatorShow {
@@ -151,206 +251,6 @@ body {
     cursor: pointer;
 }
 
-#blackJackShow {
-    background-color: aqua;
-    font-size: 20px;
-    width: 110px;
-    height: 25px;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 1%;
-    margin-bottom: 5%;
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-#bjsystemmessage {
-    background-color: black;
-    color: gold;
-    font-size: 25px;
-    width: 99%;
-    height: 35px;
-    margin: 5px;
-    text-align: center;
-    border-radius: 6px;
-}
-
-#bjwindows {
-    background-color: darkred;
-    border: solid black;
-    width: 50%;
-    height: 60%;
-    display: none;
-    border-radius: 20px;
-    padding: 3px;
-}
-
-#dealerwindow {
-    background-color: darkgreen;
-    font-size: 20px;
-    width: 90%;
-    height: 40%;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 1%;
-    border-radius: 12px;
-}
-
-#dealerCards {
-    background-color: lightgreen;
-    width: 67%;
-    height: 90%;
-    float: left;
-    margin: 10px;
-}
-
-#dealerData {
-    background-color: white;
-    width: 27%;
-    height: 90%;
-    float: left;
-    margin: 10px;
-}
-
-#playerwindow {
-    background-color: darkgreen;
-    font-size: 20px;
-    width: 90%;
-    height: 40%;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    border-radius: 12px;
-}
-
-#playerCards {
-    background-color: lightgreen;
-    width: 67%;
-    height: 90%;
-    float: left;
-    margin: 10px;
-}
-
-#playerData {
-    background-color: white;
-    width: 27%;
-    height: 90%;
-    float: left;
-    margin: 10px;
-}
-
-#blackJackPlayButton {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-
-#blackJackExitButton {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-
-#blackJackBetButton {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    display: none;
-}
-
-#blackJackCardButton {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    display: none;
-}
-
-#blackJackRiseButton {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    display: none;
-}
-
-#blackJackHoldButton {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    display: none;
-}
-
-#blackJackFoldButton {
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: solid gold;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    float: left;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    display: none;
-}
-
 #calculator {
     background-color: darkgreen;
     border: solid black;
@@ -358,7 +258,7 @@ body {
     height: 280px;
     border-radius: 6px;
     padding: 5px;
-    display: none;
+    display: block;
 }
 
 #calculatorWindow {
@@ -369,6 +269,9 @@ body {
     color: darkred;
     border-radius: 10px;
     margin-bottom: 15px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
 }
 
 #calculatorNumberX {

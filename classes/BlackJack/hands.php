@@ -11,10 +11,11 @@ class Hands
         return self::$playerHands;
     }
 
-    public function setPlayerHands($pieceOfCard, $playerHands)
+    public function setPlayerHands($playerNewCard)
     {
-        if (self::checkPlayerCards($playerHands)) {
-            self::$playerHands[$pieceOfCard] = $playerHands;
+        if (self::checkPlayerCards($playerNewCard)) {
+            array_push(self::$playerHands, $playerNewCard);
+            //self::$playerHands[$pieceOfCard] = $playerNewCard;
         } else {
 
         }
@@ -25,10 +26,11 @@ class Hands
         return self::$dealerHands;
     }
 
-    public function setDealerHands($pieceOfCard, $dealerHands)
+    public function setDealerHands($dealerNewCard)
     {
-        if (self::checkDealerCards($dealerHands)) {
-            self::$dealerHands[$pieceOfCard] = $dealerHands;
+        if (self::checkDealerCards($dealerNewCard)) {
+            array_push(self::$dealerHands, $dealerNewCard);
+            //self::$dealerHands[$pieceOfCard] = $dealerNewCard;
         } else {
 
         }
@@ -36,19 +38,19 @@ class Hands
 
     private function checkPlayerCards($newCard)
     {
-        if (!array_search($newCard, Self::$playerHands)) {
-            return true;
-        } else {
+        if (array_search($newCard, self::$playerHands)) {
             return false;
+        } else {
+            return true;
         }
     }
 
     private function checkDealerCards($newCard)
     {
-        if (!array_search($newCard, self::$dealerHands)) {
-            return true;
-        } else {
+        if (array_search($newCard, self::$dealerHands)) {
             return false;
+        } else {
+            return true;
         }
     }
 

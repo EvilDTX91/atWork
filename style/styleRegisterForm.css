@@ -1,0 +1,23 @@
+.registerFormLabelClass {
+    color: red;
+}
+
+.registerFormInputClass{
+    width: 100px;
+}
+.registerFormLabelClass:hover {
+    border: solid black;
+}
+
+.registerFormInputClass:hover{
+    border: solid black;
+    width: 120px;
+}
+
+#registerInputs {
+    float: left;
+}
+
+#registerLabels{
+    float: left;
+}

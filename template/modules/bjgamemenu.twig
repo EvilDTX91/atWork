@@ -1,20 +1,12 @@
 {% block bjgamemenu %}
-    <form id="bjGameMenuForm" action="index.php" method="post">
+    <form id="bjGameMenuForm" method="post">
         <input type="submit" id="blackJackPlayButton" name="blackJackPlayButton" value="Play"/>
-        <input type="submit" id="blackJackExitButton" name="blackJackExitButton" value="Exit"/>
+        <input type="submit" id="blackJackNewGameButton" name="blackJackNewGameButton" value="New Game"/>
         <input type="submit" id="blackJackBetButton" name="blackJackBetButton" value="Bet"/>
         <input type="submit" id="blackJackCardButton" name="blackJackCardButton" value="Card"/>
         <input type="submit" id="blackJackRiseButton" name="blackJackRiseButton" value="Rise"/>
         <input type="submit" id="blackJackHoldButton" name="blackJackHoldButton" value="Hold"/>
         <input type="submit" id="blackJackFoldButton" name="blackJackFoldButton" value="Fold"/>
+        <input type="submit" id="blackJackExitButton" name="blackJackExitButton" value="Exit"/>
     </form>
-    {#
-    <button id="blackJackPlayButton" name="blackJackPlayButton">Play</button>
-    <button id="blackJackExitButton" name="blackJackExitButton">Exit</button>
-    <button id="blackJackBetButton" name="blackJackBetButton">Bet</button>
-    <button id="blackJackCardButton" name="blackJackCardButton">Card</button>
-    <button id="blackJackRiseButton" name="blackJackRiseButton">Rise</button>
-    <button id="blackJackHoldButton" name="blackJackHoldButton">Hold</button>
-    <button id="blackJackFoldButton" name="blackJackFoldButton">Fold</button>
-    #}
 {% endblock %}
