@@ -1,5 +1,26 @@
-<div id="userOwnProfile">
-    <form>
-        <label>Username: </label><label> {{ session.username }}</label>
-    </form>
-</div>
+{% block profileModule %}
+    <div id="userOwnProfile">
+        <form>
+            <div>
+                <label>Username: </label>
+                <label>{{ session.username }}</label>
+            </div>
+            <div>
+                <label>E-Mail: </label>
+                <label> {{ session.email }}</label>
+            </div>
+            <div>
+                <label>Name:</label>
+                <label>{{ session.lastname }} {{ session.firstname }}</label>
+            </div>
+            <div>
+                <label>Date Of Birth: </label>
+                <label> {{ session.dateofbirth }}</label>
+            </div>
+            <div>
+                <label>Registered:</label>
+                <label>{{ session.registerdate }}</label>
+            </div>
+        </form>
+    </div>
+{% endblock %}

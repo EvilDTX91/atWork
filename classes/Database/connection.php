@@ -12,7 +12,8 @@ class Connection
     private $DBPASSWORD;
     private $DATABASE;
 
-    private function setConnectionData($host, $dbusername, $dbpassword, $database)
+    private
+    function setConnectionData($host, $dbusername, $dbpassword, $database)
     {
         if (isset($host)) {
             $this->HOST = $host;
@@ -22,7 +23,7 @@ class Connection
         if (isset($database)) {
             $this->DATABASE = $database;
         } else {
-            $this->DATABASE = 'atwork';
+            $this->DATABASE = 'root';
         }
         if (isset($dbusername)) {
             $this->DBUSERNAME = $dbusername;
@@ -36,19 +37,21 @@ class Connection
         }
     }
 
+    public function getConnection(): \mysqli
+    {
+        if ($this->connection === null) {
+            self::setConnectionData('localhost', 'root', '', 'atwork');
+            self::setConnection();
+        }
+        return $this->connection;
+    }
+
     private function setConnection(): void
     {
         $connection = new \mysqli($this->HOST, $this->DBUSERNAME, $this->DBPASSWORD, $this->DATABASE);
         mysqli_set_charset($connection, "utf8");
         $this->connection = $connection;
-    }
 
-    public function getConnection(): \mysqli
-    {
-        if ($this->connection === null) {
-            self::setConnectionData('localhost', 'atwork', '', 'atwork');
-            self::setConnection();
-        }
-        return $this->connection;
+        echo "</br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxConnection Enstabilaized!xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</br>";
     }
 }

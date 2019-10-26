@@ -55,7 +55,23 @@
                 </ul>
             </li>
             <li class="mainMenuElementsli"><a href="#" class="mainMenuElements"
-                                              id="menuMainElement3"><label>Search</label></a></li>
+                                              id="menuMainElement3"
+                                              onmouseover="showOrHide('searchMenu')"
+                                              onmouseout="showOrHide('noMenu')"><label>Search</label></a>
+                <ul>
+                    <div class="dropdown">
+                        <form id="mainMenu1Form" method="post">
+                            <input type="submit" class="menuSearchElements" id="menuSearchElement1"
+                                   name="recipeShow" value="Recipe"
+                                   onmouseover="showOrHide('searchMenu')"
+                                   onmouseout="showOrHide('noMenu')"/>
+                            </li>
+                        </form>
+                    </div>
+                </ul>
+
+            </li>
+
 
             <li class="mainMenuElementsli"><a href="#" class="mainMenuElements" id="menuMainElement4"
                                               onmouseover="showOrHide('applicationMenu')"
@@ -117,6 +133,10 @@
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "block";
             }
+            var s = document.getElementsByClassName("menuSearchElements");
+            for (i = 0; i < s.length; i++) {
+                s[i].style.display = "none";
+            }
             var y = document.getElementsByClassName("menuInfoElements");
             for (i = 0; i < y.length; i++) {
                 y[i].style.display = "none";
@@ -125,10 +145,31 @@
             for (i = 0; i < z.length; i++) {
                 z[i].style.display = "none";
             }
-        } else if (showthis == 'informationMenu') {
+        } else if (showthis == 'searchMenu') {
+            var s = document.getElementsByClassName("menuSearchElements");
+            for (i = 0; i < s.length; i++) {
+                s[i].style.display = "block";
+            }
+            var x = document.getElementsByClassName("menuInfoElements");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            var y = document.getElementsByClassName("menuUserElements");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+            }
+            var z = document.getElementsByClassName("menuAppElements");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.display = "none";
+            }
+        }  else if (showthis == 'informationMenu') {
             var x = document.getElementsByClassName("menuInfoElements");
             for (var i = 0; i < x.length; i++) {
                 x[i].style.display = "block";
+            }
+            var s = document.getElementsByClassName("menuSearchElements");
+            for (i = 0; i < s.length; i++) {
+                s[i].style.display = "none";
             }
             var y = document.getElementsByClassName("menuUserElements");
             for (i = 0; i < y.length; i++) {
@@ -143,6 +184,10 @@
             for (var i = 0; i < x.length; i++) {
                 x[i].style.display = "block";
             }
+            var s = document.getElementsByClassName("menuSearchElements");
+            for (i = 0; i < s.length; i++) {
+                s[i].style.display = "none";
+            }
             var y = document.getElementsByClassName("menuInfoElements");
             for (i = 0; i < y.length; i++) {
                 y[i].style.display = "none";
@@ -156,6 +201,10 @@
             for (var i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
+            var s = document.getElementsByClassName("menuSearchElements");
+            for (i = 0; i < s.length; i++) {
+                s[i].style.display = "none";
+            }
             var y = document.getElementsByClassName("menuInfoElements");
             for (i = 0; i < y.length; i++) {
                 y[i].style.display = "none";
@@ -168,6 +217,10 @@
             var x = document.getElementsByClassName("menuUserElements");
             for (var i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
+            }
+            var s = document.getElementsByClassName("menuSearchElements");
+            for (i = 0; i < s.length; i++) {
+                s[i].style.display = "none";
             }
             var y = document.getElementsByClassName("menuInfoElements");
             for (i = 0; i < y.length; i++) {

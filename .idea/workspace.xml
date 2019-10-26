@@ -35,29 +35,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="151" column="52" lean-forward="true" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
+            <state relative-caret-position="357">
+              <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Auth/register/registerValidator.php">
+        <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            <state relative-caret-position="884">
+              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Auth/register/userData.php">
+        <entry file="file://$PROJECT_DIR$/classes/Auth/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="612">
+              <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Auth/session.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Auth/register/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Auth/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/modules/profile.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Auth/profileData.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -65,53 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Database/connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="45" column="33" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classes/Auth/register/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://E:/htdocs/phpHome/newsphp/Classes/Auth/Register/Register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="56" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/blackJack.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/styleRegisterForm.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/partial/head.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -129,57 +129,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Classes/BlackJack/winner.php" />
-        <option value="$PROJECT_DIR$/Classes/BlackJack/cardValue.php" />
-        <option value="$PROJECT_DIR$/Classes/BlackJack/dealerData.php" />
-        <option value="$PROJECT_DIR$/Classes/BlackJack/playerData.php" />
-        <option value="$PROJECT_DIR$/Classes/BlackJack/hands.php" />
-        <option value="$PROJECT_DIR$/Classes/BlackJack/cardPictures.php" />
-        <option value="$PROJECT_DIR$/Classes/BlackJack/playerMoves.php" />
-        <option value="$PROJECT_DIR$/template/modules/systemMessage.twig" />
-        <option value="$PROJECT_DIR$/js/jquery-3.3.1.min.js" />
-        <option value="$PROJECT_DIR$/template/modules/calculator.twig" />
-        <option value="$PROJECT_DIR$/Classes/BlackJack/gameEngine.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="E:/jsCSSmenu.html" />
         <option value="$PROJECT_DIR$/template/modules/commercials.twig" />
         <option value="$PROJECT_DIR$/classes/BlackJack/gameWindow.php" />
-        <option value="$PROJECT_DIR$/classes/BlackJack/playerData.php" />
         <option value="$PROJECT_DIR$/template/partial/content.twig" />
         <option value="$PROJECT_DIR$/template/base.twig" />
-        <option value="$PROJECT_DIR$/template/index.twig" />
         <option value="$PROJECT_DIR$/classes/Database/Connection.php" />
-        <option value="$PROJECT_DIR$/classes/Database/connection.php" />
         <option value="$PROJECT_DIR$/classes/BlackJack/gameStart.php" />
-        <option value="$PROJECT_DIR$/classes/BlackJack/cardPictures.php" />
         <option value="$PROJECT_DIR$/template/modules/bjgamemenu.twig" />
         <option value="$PROJECT_DIR$/template/modules/playerData.twig" />
         <option value="$PROJECT_DIR$/template/modules/dealerData.twig" />
         <option value="$PROJECT_DIR$/template/modules/playerCards.twig" />
         <option value="$PROJECT_DIR$/template/modules/dealerCards.twig" />
         <option value="$PROJECT_DIR$/template/modules/blackjack.twig" />
-        <option value="$PROJECT_DIR$/classes/BlackJack/hands.php" />
         <option value="$PROJECT_DIR$/classes/BlackJack/pullCards.php" />
         <option value="$PROJECT_DIR$/classes/BlackJack/cards.php" />
         <option value="$PROJECT_DIR$/classes/BlackJack/playerMoves.php" />
         <option value="$PROJECT_DIR$/classes/BlackJack/gameEngine.php" />
         <option value="$PROJECT_DIR$/template/modules/login.twig" />
-        <option value="$PROJECT_DIR$/template/modules/register.twig" />
-        <option value="$PROJECT_DIR$/template/modules/profile.twig" />
-        <option value="$PROJECT_DIR$/template/modules/menu.twig" />
         <option value="$PROJECT_DIR$/template/modules/forgotPassword.twig" />
         <option value="$PROJECT_DIR$/template/modules/blackJackMainMenu.twig" />
-        <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/style/blackJackk.css" />
-        <option value="$PROJECT_DIR$/template/partial/head.twig" />
         <option value="$PROJECT_DIR$/style/blackJack.css" />
         <option value="$PROJECT_DIR$/style/styleRegisterForm.css" />
         <option value="$PROJECT_DIR$/classes/Auth/register.php" />
         <option value="$PROJECT_DIR$/classes/Auth/register/validator.php" />
-        <option value="$PROJECT_DIR$/classes/Auth/register/registerValidator.php" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/classes/BlackJack/playerData.php" />
+        <option value="$PROJECT_DIR$/classes/BlackJack/dealerData.php" />
+        <option value="$PROJECT_DIR$/classes/BlackJack/hands.php" />
+        <option value="$PROJECT_DIR$/classes/BlackJack/cardPictures.php" />
         <option value="$PROJECT_DIR$/classes/Auth/register/userData.php" />
+        <option value="$PROJECT_DIR$/classes/Auth/register/registerValidator.php" />
+        <option value="$PROJECT_DIR$/template/modules/register.twig" />
+        <option value="D:/htdocs/phpHome/newsphp/Classes/Auth/Register/Register.php" />
         <option value="$PROJECT_DIR$/classes/Auth/register/register.php" />
+        <option value="$PROJECT_DIR$/template/modules/cook.twig" />
+        <option value="$PROJECT_DIR$/template/modules/menu.twig" />
+        <option value="$PROJECT_DIR$/template/modules/recipe.twig" />
+        <option value="$PROJECT_DIR$/template/partial/head.twig" />
+        <option value="$PROJECT_DIR$/template/modules/recipesearch.twig" />
+        <option value="$PROJECT_DIR$/style/recipe.css" />
+        <option value="$PROJECT_DIR$/style/style.css" />
+        <option value="$PROJECT_DIR$/template/index.twig" />
+        <option value="$PROJECT_DIR$/classes/Database/connection.php" />
+        <option value="D:/htdocs/phpHome/newsphp/Classes/Auth/ProfileData.php" />
+        <option value="$PROJECT_DIR$/template/modules/profile.twig" />
+        <option value="$PROJECT_DIR$/classes/Auth/login.php" />
+        <option value="$PROJECT_DIR$/classes/Auth/profileData.php" />
+        <option value="$PROJECT_DIR$/classes/Auth/logout.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/classes/Auth/session.php" />
       </list>
     </option>
   </component>
@@ -192,10 +192,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1400" />
-    <option name="height" value="970" />
+    <option name="x" value="408" />
+    <option name="y" value="12" />
+    <option name="width" value="1262" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -225,19 +225,13 @@
               <item name="atwork" type="b2602c69:ProjectViewProjectNode" />
               <item name="atwork" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="BlackJack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atwork" type="b2602c69:ProjectViewProjectNode" />
               <item name="atwork" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
               <item name="Database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="atwork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="atwork" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="atwork" type="b2602c69:ProjectViewProjectNode" />
@@ -264,7 +258,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/classes/Auth/register" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../newsphp" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
@@ -408,16 +402,46 @@
       <workItem from="1554746731973" duration="919000" />
       <workItem from="1554748308619" duration="1750000" />
       <workItem from="1554750126449" duration="1590000" />
+      <workItem from="1565634594356" duration="1254000" />
+      <workItem from="1565889247233" duration="12000" />
+      <workItem from="1568311647849" duration="4685000" />
+      <workItem from="1568397422530" duration="592000" />
+      <workItem from="1568398988834" duration="2228000" />
+      <workItem from="1570643811209" duration="925000" />
+      <workItem from="1570645624084" duration="1787000" />
+      <workItem from="1570647602233" duration="1789000" />
+      <workItem from="1570649577129" duration="1079000" />
+      <workItem from="1570726779243" duration="1769000" />
+      <workItem from="1570728821702" duration="1787000" />
+      <workItem from="1570731155287" duration="565000" />
+      <workItem from="1570734082247" duration="1789000" />
+      <workItem from="1570736014733" duration="926000" />
+      <workItem from="1570814690350" duration="1757000" />
+      <workItem from="1570816562741" duration="1927000" />
+      <workItem from="1570818880498" duration="1776000" />
+      <workItem from="1570820787021" duration="1029000" />
+      <workItem from="1571754410775" duration="1768000" />
+      <workItem from="1571756206049" duration="1631000" />
+      <workItem from="1571758039781" duration="1782000" />
+      <workItem from="1571761679814" duration="1153000" />
+      <workItem from="1571765739606" duration="1790000" />
+      <workItem from="1571767866736" duration="1789000" />
+      <workItem from="1571769678155" duration="1792000" />
+      <workItem from="1571771509357" duration="567000" />
+      <workItem from="1571939456661" duration="1744000" />
+      <workItem from="1571941245635" duration="1789000" />
+      <workItem from="1571943057446" duration="1775000" />
+      <workItem from="1571944953984" duration="458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235937000" />
+    <option name="totallyTimeSpent" value="281651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.17237164" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.13264059" />
       <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" weight="0.19463088" />
       <window_info id="Favorites" order="2" sideWeight="0.50070924" side_tool="true" weight="0.19463088" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -431,7 +455,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3293556" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5012225" side_tool="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5012225" side_tool="true" weight="0.3281075" />
       <window_info anchor="bottom" id="SVN Repositories" order="12" weight="0.32997763" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -442,263 +466,113 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/classes/BlackJack/gameStart.php</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../newsphp/template/modules/onlineUsers.twig">
+    <entry file="file://$PROJECT_DIR$/template/modules/systemMessage.twig">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../newsphp/template/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../newsphp/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/gameWindow.php" />
-    <entry file="file://$PROJECT_DIR$/template/modules/calculator.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/template/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
-    </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/template/modules/login.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="118" column="27" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/Classes/Database/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/cardValue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/gameStart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/dealerData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/cardPictures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/BlackJack/playerData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/commercials.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-        </state>
-      </provider>
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/Register/UserData.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/base.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/dealerData.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/dealerCards.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/hands.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/pullCards.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/cards.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/playerMoves.php">
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Article/ArticleLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/winner.php">
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Article/ArticleUploader.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="612">
+          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/BlackJack/gameEngine.php">
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/SocialNetwork/onlineUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="731">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/playerData.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/playerCards.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/partial/content.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/template/modules/profile.twig">
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/Logout.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/login.twig">
+    <entry file="file://D:/htdocs/phpHome/newsphp/template/modules/signUp.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Auth/register/registerValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/Register/Register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="6" selection-end-line="38" selection-end-column="9" />
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/index.twig">
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/Register/RegisterValidator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="272">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/bjgamemenu.twig">
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/Register/RegisterFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        <state relative-caret-position="187">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/blackJackMainMenu.twig">
+    <entry file="file://$PROJECT_DIR$/classes/Auth/register/userData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/blackjack.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/profile.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/forgotPassword.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/modules/menu.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="58" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/Classes/Auth/Register/UserData.php">
+    <entry file="file://D:/htdocs/phpHome/newsphp/template/modules/onlineUsers.twig">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/modules/playerCards.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/BlackJack/dealerData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/modules/register.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="86" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="170">
+          <caret line="10" column="119" lean-forward="true" selection-start-line="10" selection-start-column="119" selection-end-line="11" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -716,67 +590,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/partial/head.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/Classes/Auth/Register/RegisterValidator.php">
+    <entry file="file://$PROJECT_DIR$/template/modules/commercials.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/index.php">
+    <entry file="file://$PROJECT_DIR$/template/partial/head.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="96" column="41" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
+        <state relative-caret-position="119">
+          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/Classes/Auth/Login.php">
+    <entry file="file://$PROJECT_DIR$/template/modules/menu.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="151" column="52" lean-forward="true" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
+        <state relative-caret-position="765">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Auth/register/registerValidator.php">
+    <entry file="file://$PROJECT_DIR$/template/modules/recipe.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Database/connection.php">
+    <entry file="file://$PROJECT_DIR$/template/modules/recipesearch.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Auth/register/userData.php">
+    <entry file="file://$PROJECT_DIR$/style/recipe.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="459">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/htdocs/phpHome/newsphp/Classes/Auth/Register/Register.php">
+    <entry file="file://$PROJECT_DIR$/template/partial/content.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="56" selection-end-column="40" />
+        <state>
+          <caret column="13" selection-start-column="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/partial/footer.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/partial/header.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/base.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/template/base.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/template/modules/profile.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/template/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="97" lean-forward="true" selection-start-line="4" selection-start-column="97" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/modules/login.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/CheckUser.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Database/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/ProfileData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/htdocs/phpHome/newsphp/Classes/Auth/UserSession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Auth/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Auth/register/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="697">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Auth/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/modules/profile.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Auth/profileData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Database/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Auth/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
         </state>
       </provider>
     </entry>

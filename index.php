@@ -75,8 +75,11 @@ if (isset($_POST['blackJackExitButton'])) {
 }
 
 if (isset($_POST['profileLogout'])) {
+    $userLogOut = new \atwork\auth\Logout();
+    $userLogOut->userLogOut($_SESSION['username']);
     $leftsidetext = 'modules/login.twig';
-    session_destroy();
+    //$_SESSION['loggedIn'] = false;
+    //session_destroy();
 }
 
 if (isset($_POST['blackJackHoldButton'])) {
@@ -109,7 +112,9 @@ if (isset($_POST['blackJackNewGameButton'])) {
 }
 
 if (isset($_POST['sendLoginRequest'])) {
-    $_SESSION['username'] = $_POST['usernameLogin'];
+    $loginStart = new \atwork\Auth\login;
+    $loginStart->userLogin($_POST['usernameLogin'],$_POST['passwordLogin']);
+
     $leftsidetext = 'modules/profile.twig';
 } else {
     if (isset($_SESSION['username'])) {
@@ -149,8 +154,36 @@ if (isset($_POST['sendRegisterForm'])) {
 
     $register = new \atwork\Auth\Register\Register();
     $userdata = new \atwork\Auth\Register\UserData();
-    $newMember = $register->initRegistNewMember($userdata);
+
+    try {
+        $newMember = $register->initRegistNewMember($userdata);
+    } catch (Exception $exception) {
+        echo "Error: " . $exception->getMessage();
+    }
+    //$newMember = $register->initRegistNewMember($userdata);
 }
+
+$connection = new \atwork\Database\Connection();
+$connect = $connection->getConnection();
+$data = "SELECT * FROM users";
+$newdata = $connect->query($data);
+
+if($newdata->num_rows > 0){
+    while($row = $newdata->fetch_assoc())
+    {
+        echo "</br>ID: " . $row["userid"] . " Name: " . $row["firstname"] . " " . $row["lastname"] . "</br>";
+    }
+}
+else { echo "result 0";}
+
+
+if(isset($_POST['recipeShow']))
+{
+    echo "Mit főzzek ma?!";
+    $contents = 'modules/recipesearch.twig';
+}
+
+
 /*
 $connection = new \atwork\Database\Connection();
 $connect = $connection->getConnection();
